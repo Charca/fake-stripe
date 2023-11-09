@@ -1,0 +1,19 @@
+---
+const { isBig } = Astro.props
+---
+
+<div class:list={['box', isBig && 'big']}></div>
+
+<style>
+  .box {
+    view-transition-name: box;
+    width: 100px;
+    height: 100px;
+    background-color: red;
+  }
+
+  .big {
+    width: 400px;
+    height: 400px;
+  }
+</style>
